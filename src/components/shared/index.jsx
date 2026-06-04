@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Pages() {
+function Shared() {
   return (
     <div>
-      Pages
+      Shared
     </div>
   );
 }
 
-export default Pages;
+export default Shared;
