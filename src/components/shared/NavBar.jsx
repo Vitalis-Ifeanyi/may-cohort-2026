@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "/favicon.svg"
 import { NavLink } from 'react-router-dom';
+import { NavData } from '../../data/NAvData';
 
 function NavBar() {
   return (
@@ -10,10 +11,9 @@ function NavBar() {
         <img src={logo} alt='' className='logo'/>
       </div></NavLink>
       <ul>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/projects">Projects</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        {NavData.map((props,index)=>(
+          <li key={index}><NavLink to={props.link}>{props.name}</NavLink></li>
+        ))}
       </ul>
      
     </nav>

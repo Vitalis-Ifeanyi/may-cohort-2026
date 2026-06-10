@@ -1,13 +1,12 @@
-import React from 'react';
-import NavBar from '../components/shared/NavBar';
-import AboutHero from '../components/about/AboutHero';
+
 import "../style/About.css"
+import Header from '../components/home/Header';
+import hero from "../assets/hero.png"
 
 function About() {
   return (
     <>
-    <NavBar/>
-    <AboutHero/>
+   <Header title="ABOUT US" image={hero}/>
       
     </>
   );
