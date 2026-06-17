@@ -1,4 +1,3 @@
-import React from 'react';
 import FutureData from '../../data/FutureData';
 
 function Future() {
